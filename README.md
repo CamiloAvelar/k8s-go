@@ -2,7 +2,8 @@
 
 ## DEPLOYING
 - k3d cluster create k8s-go -p 80:80
-- kubectl apply -f k8s-deployment.yaml
+- cd deployment
+- kubectl apply -k ./
 - curl -v go.localdev.me/?name=Camilo
 
 ## BUILDING AND PUSHING
